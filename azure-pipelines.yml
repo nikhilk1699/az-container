@@ -1,4 +1,3 @@
-# Docker
 jobs:
 - job: DotNetCoreCLI@2
   displayName: 'Build'
@@ -35,5 +34,4 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-        tags: |
-          $(tag)
+   
