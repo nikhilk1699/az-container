@@ -1,7 +1,14 @@
 # Docker
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
+jobs:
+- job: DotNetCoreCLI@2
+  displayName: 'Build'
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'build'
+
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
