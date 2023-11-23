@@ -9,7 +9,7 @@
                "port": "3306",
                "database": "${process.env.DATABASE_NAME}",
                "username": "${process.env.DATABASE_USERNAME}", 
-               "password": "${password.env.DATABASE_PASSWORD}"
+               "password": "${process.env.DATABASE_PASSWORD}"
            }
        },
        "options":{
